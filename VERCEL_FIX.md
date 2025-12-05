@@ -12,13 +12,13 @@ You need to deploy **frontend only** to Vercel, and deploy the **backend separat
 
 ### Option 1: Deploy Frontend Only to Vercel (Recommended)
 
-1. **In Vercel Dashboard**:
-   - Go to your project settings
-   - Set **Root Directory** to: `frontend`
-   - Set **Framework Preset** to: `Vite`
-   - Set **Build Command** to: `npm run build`
-   - Set **Output Directory** to: `dist`
-   - Set **Install Command** to: `npm install`
+1. **In Vercel Dashboard** (during initial setup):
+   - Click "Edit" next to Root Directory
+   - Type: `frontend` ← THIS IS THE KEY!
+   - Framework Preset: `Vite` (auto-detected)
+   - Build Command: `npm run build` (leave default)
+   - Output Directory: `dist` (leave default)
+   - Install Command: `npm install` (leave default)
 
 2. **Add Environment Variables** (in Vercel dashboard):
    ```

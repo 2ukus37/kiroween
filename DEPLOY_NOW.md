@@ -67,14 +67,20 @@ API_URL=https://your-backend-name.onrender.com
 
 **Go to**: https://vercel.com
 
-**Settings**:
+**⚠️ CRITICAL STEP - Settings**:
 ```
 Repository: https://github.com/2ukus37/kiroween
-Root Directory: frontend
-Framework: Vite
-Build Command: npm run build
-Output Directory: dist
+Root Directory: frontend  ← CLICK "EDIT" AND TYPE THIS!
+Framework: Vite (auto-detected)
+Build Command: npm run build (leave default)
+Output Directory: dist (leave default)
 ```
+
+**How to set Root Directory**:
+1. When importing project, look for "Root Directory"
+2. Click the "Edit" button next to it
+3. Type: `frontend`
+4. Click "Continue"
 
 **Environment Variables** (copy-paste all):
 ```

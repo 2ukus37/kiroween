@@ -87,12 +87,12 @@ wy1vpXVPxM3J0tc/wmmSaqM=
 1. **Go to [Vercel.com](https://vercel.com)** and sign up
 2. **Click "Add New..." → "Project"**
 3. **Import your GitHub repository**: `https://github.com/2ukus37/kiroween`
-4. **Configure the project**:
+4. **⚠️ IMPORTANT - Configure the project**:
    - **Framework Preset**: Vite
-   - **Root Directory**: `frontend`
-   - **Build Command**: `npm run build`
-   - **Output Directory**: `dist`
-   - **Install Command**: `npm install`
+   - **Root Directory**: Click "Edit" and type `frontend` ← THIS IS CRITICAL!
+   - **Build Command**: Leave as default (`npm run build`)
+   - **Output Directory**: Leave as default (`dist`)
+   - **Install Command**: Leave as default (`npm install`)
 
 5. **Add Environment Variables**:
    ```
