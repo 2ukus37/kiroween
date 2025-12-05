@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-bg-dark text-ghost antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-accent-purple hover:bg-purple-600 text-white font-semibold py-2 px-6 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl;
+  }
+
+  .btn-secondary {
+    @apply bg-accent-green hover:bg-green-600 text-white font-semibold py-2 px-6 rounded-lg transition-all duration-200;
+  }
+
+  .card-spooky {
+    @apply bg-gradient-to-br from-[#1a1f3a] to-bg-darker border-2 border-accent-purple rounded-lg p-6 shadow-lg animate-pulse-glow;
+  }
+
+  .input-spooky {
+    @apply bg-bg-darker border-2 border-accent-purple rounded-lg px-4 py-2 text-ghost focus:outline-none focus:border-accent-green transition-colors;
+  }
+}

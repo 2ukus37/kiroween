@@ -1,0 +1,33 @@
+{
+  "name": "dead-trend-tracker",
+  "version": "1.0.0",
+  "description": "Web3 short-form video platform resurrecting dead social media platforms",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "setup": "node validate.js && npm run install:all && cd backend && npx hardhat compile",
+    "validate": "node validate.js",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "cd backend && npm run build",
+    "test": "npm run test:frontend && npm run test:backend && npm run test:contracts",
+    "test:frontend": "cd frontend && npm test",
+    "test:backend": "cd backend && npm test",
+    "test:contracts": "cd backend && npx hardhat test",
+    "deploy:contracts": "cd backend && npx hardhat run scripts/deploy.ts --network mumbai"
+  },
+  "keywords": [
+    "web3",
+    "blockchain",
+    "video",
+    "nft",
+    "polygon"
+  ],
+  "author": "",
+  "license": "MIT"
+}
