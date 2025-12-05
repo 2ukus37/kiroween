@@ -240,6 +240,30 @@ Deployed on **Polygon Mainnet**:
 - **ContentNFT**: `0xf8e81D47203A594245E36C48e151709F0C19fBe8`
 - **RewardPool**: `0xD7ACd2a9FD159E69Bb102A1ca21C9a3e3A5F771B`
 
+## 🚀 Deployment
+
+### Quick Deploy Guide
+
+**Frontend (Vercel)**:
+1. Set Root Directory to `frontend`
+2. Add environment variables from `frontend/.env`
+3. Deploy!
+
+**Backend (Render)**:
+1. Set Root Directory to `backend`
+2. Add environment variables from `backend/.env`
+3. Deploy!
+
+📖 **Full deployment guide**: See [VERCEL_DEPLOYMENT.md](VERCEL_DEPLOYMENT.md)
+🔧 **Having issues?**: See [VERCEL_FIX.md](VERCEL_FIX.md)
+
+### Architecture
+- **Frontend**: Vercel (Static hosting)
+- **Backend**: Render (Node.js server)
+- **Storage**: IPFS via Pinata
+- **Database**: Firebase Firestore
+- **Blockchain**: Polygon Mainnet
+
 ## 📄 License
 
 MIT License - See [LICENSE](LICENSE) file for details
