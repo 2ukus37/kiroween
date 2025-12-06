@@ -83,7 +83,7 @@ export const VideoUpload: React.FC = () => {
       formData.append('walletAddress', account);
       formData.append('userId', account); // Using wallet as userId for now
 
-      const response = await axios.post(`${API_BASE_URL}/api/videos/upload`, formData, {
+      await axios.post(`${API_BASE_URL}/api/videos/upload`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
